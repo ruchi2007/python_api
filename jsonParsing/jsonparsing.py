@@ -65,10 +65,10 @@ user_data = {
 #print(data[1]["email"])
 #print(data[3]["email"])
 
-json1_path = "/jsonParsing\\json1.json"
-json2_path = "/jsonParsing\\json2.json"
+json1_path = "C:\\Users\\takia\\Documents\\workspace_python\\python_api\\jsonParsing\\json1.json"
+json2_path = "C:\\Users\\takia\\Documents\\workspace_python\\python_api\\jsonParsing\\json2.json"
 
-with open(json2_path) as file1:
+with open(json1_path) as file1:
     data1 = json.load(file1)
     print(data1["page"])
     #pprint(data1)

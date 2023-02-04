@@ -4,14 +4,14 @@ import random
 import string
 letters = string.digits
 random = "".join(random.choice(letters)for i in range(3))
-url = 'http://localhost:8888/chase/wp-json/wc/v3/customers'
-auth = OAuth1('ck_bbd634babc20ad5fdd5c0fa1a97d3b63c03e5f99', 'cs_8aecb177625f82f6bdde217c046afd133862680b')
+url = 'http://localhost:8888/optimum/wp-json/wc/v3/customers'
+auth = OAuth1('ck_53d693e068ce9b011ed628de89a83693022c7156 ', 'cs_636bbbf7c608fb9d4c67fe605b3b5e95ab11c3c3')
 json_data = {
   "email": "bo.doee123"+random+"@example.com",
-  "first_name": "John",
+  "first_name": "Johnn",
   "last_name": "Doee",
-  "username": "bo.doee"+random,
-  "password": "johne.doe"
+  "username": "boo.doee"+random,
+  "password": "johnne.doe"
 }
 res = requests.post(url, auth=auth, data = json_data)
 print(res.json())

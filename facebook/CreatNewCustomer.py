@@ -4,8 +4,8 @@ import random
 import string
 letters = string.digits
 random = "".join(random.choice(letters)for i in range(3))
-url = 'http://localhost:8888/chase/wp-json/wc/v3/customers'
-auth = OAuth1('ck_bbd634babc20ad5fdd5c0fa1a97d3b63c03e5f99', 'cs_8aecb177625f82f6bdde217c046afd133862680b')
+url = 'http://localhost:8888/rose/wp-json/wc/v3/customers'
+auth = OAuth1('ck_22bd8f5a8766395e0fb1ccf68ded616f7deec563', 'cs_27f23bcfda851936b7fa2f93f77699ccc045c47c')
 json_data = {
   "email": "bo.doee123"+random+"@example.com",
   "first_name": "John",

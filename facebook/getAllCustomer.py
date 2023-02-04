@@ -1,8 +1,8 @@
 import requests
 from requests_oauthlib import OAuth1
 
-url = 'http://localhost:8888/chase/wp-json/wc/v3/customers'
-auth = OAuth1('ck_bbd634babc20ad5fdd5c0fa1a97d3b63c03e5f99', 'cs_8aecb177625f82f6bdde217c046afd133862680b')
+url = 'http://localhost:8888/rose/wp-json/wc/v3/customers'
+auth = OAuth1('ck_22bd8f5a8766395e0fb1ccf68ded616f7deec563', 'cs_27f23bcfda851936b7fa2f93f77699ccc045c47c')
 
 res = requests.get(url, auth=auth)
 
@@ -19,8 +19,8 @@ print(res.json())
 print(res.json()[0]['id'])
 print(res.json()[0]['first_name'])
 print(res.json()[1]['last_name'])
-print(res.json()[2]['username'])
-print(res.json()[3]['email'])
+print(res.json()[1]['username'])
+print(res.json()[1]['email'])
 
 for a in res.json():
     # print(a["id"])
